@@ -443,7 +443,7 @@
 </li>
 <li><p>Обнаружение столкновения спрайтов.</p>
 <ul>
-<li><p>Основное обнаружение - <a class="reference external" href="https://learn.arcade.academy/chapters/18_sprites_and_collisions/sprites.html#the-update-method">Обучающая книга Arcade: о столкновениях</a>, <a class="reference internal" href="index.html#sprite-collect-coins"><span class="std std-ref">Сбор Монет - Мышка</span></a></p></li>
+<li><p>Основное обнаружение - <a class="reference external" href="https://learn.arcade.academy/chapters/18_sprites_and_collisions/sprites.html#the-update-method">Руководство по Arcade: о столкновениях</a>, <a class="reference internal" href="index.html#sprite-collect-coins"><span class="std std-ref">Сбор Монет - Мышка</span></a></p></li>
 <li><p>Понимание обнаружения столкновений и пространственного хеширования</p></li>
 <li><p>Хит-боксы спрайтов</p>
 <ul>
@@ -566,163 +566,123 @@
 </div>
 <span id="document-installation"></span><div class="section" id="installation-instructions">
 <span id="id1"></span><h3>Инструкции по установке<a class="headerlink" href="#installation-instructions" title="Постоянная ссылка на этот заголовок">¶</a></h3>
-<p>Arcade runs on Windows, Mac OS X, and Linux.</p>
-<p>Arcade requires Python 3.6 or newer. It does not run on Python 2.x.</p>
-<p>Select the instructions for your platform:</p>
+<p>Arcade запускается на Windows, Mac OS X, и Linux.</p>
+<p>Для Arcade требуется Python 3.6 или более новая версия. Не запустится на Python 2.x.</p>
+<p>Выберите инструкции к вашей платформе:</p>
 <div class="toctree-wrapper compound">
 <span id="document-venv_install/index"></span><div class="section" id="setting-up-a-virtual-environment-in-pycharm">
-<h4>Setting Up a Virtual Environment In PyCharm<a class="headerlink" href="#setting-up-a-virtual-environment-in-pycharm" title="Постоянная ссылка на этот заголовок">¶</a></h4>
-<p>A Python virtual environment (venv) allows libraries to be installed for just a single
-project, rather than shared across everyone using the computer. It also does
-not require administrator privilages to install.</p>
-<p>Assuming you already have a project, follow these steps to create a venv:</p>
-<p>Step 1: Select File…Settings</p>
+<h4>Настройка виртуальной среды в PyCharm<a class="headerlink" href="#setting-up-a-virtual-environment-in-pycharm" title="Постоянная ссылка на этот заголовок">¶</a></h4>
+<p>Виртуальная среда Python (venv) Позволяет устанавливать библиотеки лишь для одного проекта, а не для совместного использования всеми пользователями компьютера. Также для его установки не требуются права администрации.</p>
+<p>Если у вас уже есть проект, следуйте следующим шагам для создания venv:</p>
+<p>Шаг 1: Выберите раздел Файл(File)…Настройки(Settings)</p>
 <img alt="_images/file_settings.png" src="_images/file_settings.png" />
-<p>Step 2: Click “Project Interpreter”. Then find the gear icon in the upper right.
-click on it and select “Add”</p>
+<p>Шаг 2: Нажмите на "Интерпретатор проекта" (“Project Interpreter”). Затем найдите в правом верхнем углу значок шестерёнки. Нажмите на него и выберите "добавить" (“Add”)</p>
 <img alt="_images/click_gear.png" src="_images/click_gear.png" />
-<p>Step 3: Select Virtualenv Environment from the left. Then create a new
-environment. Usually it should be in a folder called <code class="docutils literal notranslate"><span class="pre">venv</span></code> in your main
-project. PyCharm does not always select the correct location by default, so
-carefully look at the path to make sure it is correct, then select “Ok”.</p>
+<p>Шаг 3: Выберите среду Virtualenv Environment слева. Затем создайте новую среду. Обычно она находится в папке с именем <code class="docutils literal notranslate"><span class="pre">venv</span></code> в вашем основном проекте. PyCharm не всегда выбирает правильное местоположение по умолчанию, так что сперва убедитесь, что путь правильный, затем нажмите “Ok”.</p>
 <img alt="_images/name_venv.png" src="_images/name_venv.png" />
-<p>Now a virtual environment has been set up. The standard in Python projects
-is to create a file called <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> and list the packages you
-want in there.</p>
-<p>PyCharm will automatically ask if you want to install those packages as
-soon as you type them in. Go ahead and let it.</p>
+<p>Поздравляем! Вы настроили виртуальную среду. По обычиям в Python projects стоит создать файл с именем <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> и перечислить в нём нужные пакеты.</p>
+<p>PyCharm Автоматически предложит установить эти пакеты после того, как вы их введёте. Не противьтесь и позвольте ему это сделать.</p>
 <img alt="_images/requirements.png" src="_images/requirements.png" />
 </div>
 <span id="document-installation_windows"></span><div class="section" id="installation-on-windows">
-<h4>Installation on Windows<a class="headerlink" href="#installation-on-windows" title="Постоянная ссылка на этот заголовок">¶</a></h4>
-<p>To develop with the Arcade library, we need to install Python, then install
-Arcade.</p>
+<h4>Установка на Windows<a class="headerlink" href="#installation-on-windows" title="Постоянная ссылка на этот заголовок">¶</a></h4>
+<p>Для работы с библиотеками Arcade сначала надо установить Python, а только потом уже Arcade.</p>
 <div class="section" id="step-1-install-python">
-<h5>Step 1: Install Python<a class="headerlink" href="#step-1-install-python" title="Постоянная ссылка на этот заголовок">¶</a></h5>
-<p>Install Python from the official Python website:</p>
+<h5>Шаг 1: Установите Python<a class="headerlink" href="#step-1-install-python" title="Постоянная ссылка на этот заголовок">¶</a></h5>
+<p>Загрузите Python с официального веб-сайта Python:</p>
 <p><a class="reference external" href="https://www.python.org/downloads/">https://www.python.org/downloads/</a></p>
-<p>When installing Python, make sure to add Python to the path (1) before clicking the Install button (2).</p>
+<p>При установке Python обязательно добавьте Python в путь (1) перед тем, как нажать на кнопку установки (2).</p>
 <a class="reference internal image-reference" href="_images/setup_windows_1.png"><img alt="_images/setup_windows_1.png" src="_images/setup_windows_1.png" style="width: 450px;" /></a>
-<p>After that, you can just close the dialog. There’s no need to increase the path length, although it
-doesn’t hurt anything if you do.</p>
+<p>После этого можно закрыть окно. Не нужно удлинять путь, хотя это никак вам не навредит.</p>
 <a class="reference internal image-reference" href="_images/setup_windows_2.png"><img alt="_images/setup_windows_2.png" src="_images/setup_windows_2.png" style="width: 450px;" /></a>
 </div>
 <div class="section" id="step-2-install-the-arcade-library">
-<h5>Step 2: Install The Arcade Library<a class="headerlink" href="#step-2-install-the-arcade-library" title="Постоянная ссылка на этот заголовок">¶</a></h5>
-<p>If you install Arcade as a pre-built library, there are two options on
-how to do it. The best way is to use a “virtual environment.” This is
-a collection of Python libraries that only apply to your particular project.
-You don’t have to worry about libraries for other projects conflicting
-with your project. You also don’t need “administrator” level privileges to
-install libraries.</p>
+<h5>Шаг 2: Установите библиотеки Arcade<a class="headerlink" href="#step-2-install-the-arcade-library" title="Постоянная ссылка на этот заголовок">¶</a></h5>
+<p>Если вы устанавливаете Arcade в качестве готовой библиотеки, то есть два метода установки. Лучший способ - использование “Виртуальной среды.” Это коллекция библиотек Python, применимых только к вашему конкретному проекту. Не стоит беспокоиться о конфликтах библиотек для других проектов с вашим проектом Вам также не понадобятся привилегии уровня “Администратор" для установки библиотек.</p>
 <div class="section" id="install-arcade-with-pycharm-and-a-virtual-environment">
-<span id="install-pycharm"></span><h6>Install Arcade with PyCharm and a Virtual Environment<a class="headerlink" href="#install-arcade-with-pycharm-and-a-virtual-environment" title="Постоянная ссылка на этот заголовок">¶</a></h6>
-<p>If you are using PyCharm, setting up a virtual environment is easy. Once you’ve
-got your project, open up the settings:</p>
+<span id="install-pycharm"></span><h6>Установите Arcade с PyCharm и Виртуальной средой<a class="headerlink" href="#install-arcade-with-pycharm-and-a-virtual-environment" title="Постоянная ссылка на этот заголовок">¶</a></h6>
+<p>при использовании PyCharm настройка Виртуальной среды будет лёгкой. Создав проект, откройте настройки:</p>
 <a class="reference internal image-reference" href="_images/venv_setup_1.png"><img alt="_images/venv_setup_1.png" src="_images/venv_setup_1.png" style="width: 300px;" /></a>
-<p>Select project interpreter:</p>
+<p>Выберите интерпретатор Проекта:</p>
 <a class="reference internal image-reference" href="_images/venv_setup_2.png"><img alt="_images/venv_setup_2.png" src="_images/venv_setup_2.png" style="width: 650px;" /></a>
-<p>Create a new virtual environment. Make sure the venv is inside your
-project folder.</p>
+<p>Создайте новую виртуальную среду. Убедитесь, что venv находится внутри вашей папки с проектом</p>
 <a class="reference internal image-reference" href="_images/venv_setup_3.png"><img alt="_images/venv_setup_3.png" src="_images/venv_setup_3.png" style="width: 650px;" /></a>
-<p>Now you can install libraries. PyCharm will automatically ask to add them
-if you have a file called <cite>requirements.txt</cite> that lists the required libraries.</p>
+<p>Теперь вы можете устанавливать библиотеки. PyCharm автоматически предложит добавить их, если у вас имеется файл с именем<cite>requirements.txt</cite>, где перечислены нужные библиотеки.</p>
 <a class="reference internal image-reference" href="_images/venv_setup_4.png"><img alt="_images/venv_setup_4.png" src="_images/venv_setup_4.png" style="width: 650px;" /></a>
 <div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>If you are using Python 3.8, the “Numpy” and “Pillow” libraries might try
-to build themselves from scratch, which will probably error out.
-To fix, we can manually update “pip” by opening a
-a PyCharm terminal, and then typing the following into the terminal:</p>
+<p class="admonition-title">Примечание</p>
+<p>Если вы испоьзуете Python 3.8, Библиотеки “Numpy” и “Pillow” попробуют воссоздать себя из scratch, что скорее всего приведёт к ошибке. Для починки можно вручную обновить “pip”, открыв терминал PyCharm и введя в терминал следующее:</p>
 <p><code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-U</span> <span class="pre">--force-reinstall</span> <span class="pre">pip</span></code></p>
-<p>Restart PyCharm (or exit and restart the terminal)
-and then attempt to install Arcade again.</p>
+<p>Перезапустите PyCharm (или вфйдите и перезапустите терминал), после чего попробуйте установить Arcade ещё раз.</p>
 </div>
 </div>
 <div class="section" id="install-arcade-using-the-command-line-interface">
-<h6>Install Arcade using the command line interface<a class="headerlink" href="#install-arcade-using-the-command-line-interface" title="Постоянная ссылка на этот заголовок">¶</a></h6>
-<p>If you prefer to use the command line interface (CLI),
-then you can install arcade directly using pip:</p>
-<p><code class="docutils literal notranslate"><span class="pre">pip3</span> <span class="pre">install</span> <span class="pre">arcade</span></code></p>
-<p>If you happen to be using pipenv, then the appropriate command is:</p>
-<p><code class="docutils literal notranslate"><span class="pre">python3</span> <span class="pre">-m</span> <span class="pre">pipenv</span> <span class="pre">install</span> <span class="pre">arcade</span></code></p>
+<h6>Установите Arcade с применением интерфейса командной строки<a class="headerlink" href="#install-arcade-using-the-command-line-interface" title="Постоянная ссылка на этот заголовок">¶</a></h6>
+<p>Если вы предпочитаете интерфейс командной строки (CLI), то вы можете установить Arcade напрямую с помощью pip:</p>
+<p><code class="docutils literal notranslate"><span class="pre">pip3</span> <span class="pre">install</span> <span class="pre">Arcade</span></code></p>
+<p>Если вы пользуетесь pipenv, то вам нужно ввести следующее:</p>
+<p><code class="docutils literal notranslate"><span class="pre">python3</span> <span class="pre">-m</span> <span class="pre">pipenv</span> <span class="pre">install</span> <span class="pre">Arcade</span></code></p>
 </div>
 </div>
 </div>
 <span id="document-installation_mac"></span><div class="section" id="installation-on-the-mac">
-<h4>Installation on the Mac<a class="headerlink" href="#installation-on-the-mac" title="Постоянная ссылка на этот заголовок">¶</a></h4>
-<p>Go to the <a class="reference external" href="https://www.python.org/downloads/">Python website</a> and download Python.</p>
+<h4>Установка на Mac<a class="headerlink" href="#installation-on-the-mac" title="Постоянная ссылка на этот заголовок">¶</a></h4>
+<p>Пройдите на <a class="reference external" href="https://www.python.org/downloads/">вэб-сайт Python</a> и установите Python.</p>
 <img alt="_images/mac1.png" src="_images/mac1.png" />
-<p>Then install it:</p>
+<p>Затем установите это:</p>
 <img alt="_images/mac4.png" src="_images/mac4.png" />
-<p>Download and install <a class="reference external" href="https://www.jetbrains.com/pycharm/">PyCharm</a>.
-The community edition is free, and WAY better than IDLE.</p>
-<p>Download the zip file (or use git) for the Arcade template file.</p>
+<p>Установите <a class="reference external" href="https://www.jetbrains.com/pycharm/">PyCharm</a>. Издание комьюнити бесплатное и ГОРАЗДО лучше IDLE версии.</p>
+<p>Установите zip файл (или используйте git) для шаблонного файла Arcade</p>
 <p><a class="reference external" href="https://github.com/pythonarcade/template">https://github.com/pythonarcade/template</a></p>
 <img alt="_images/mac5.png" src="_images/mac5.png" />
-<p>After you’ve downloaded it, open up the zip file, and pull out the template folder
-to your desktop or whereever you’d like to save it. Then rename it to your
-project name.</p>
-<p>Start PyCharm, and select File…Open and select the folder you just created.</p>
-<p>When creating opening the new project, create a virtual environment like so:</p>
+<p>после установки открайте zip и вытащите шаблонную папку на ваш рабочий стол (или куда вы там хотите его сохранить). Затем переименуйте её под имя вашего проекта</p>
+<p>Запустите PyCharm, и выберите Файл(File)…Открыть(Open). Там выберите только что созданную вами папку.</p>
+<p>Когда создаёте или открываете новый проект, создавайте виртуальную среду вот так:</p>
 <img alt="_images/mac2.png" src="_images/mac2.png" />
-<p>If that doesn’t work, (sometimes PyCharm seems to ignore that, or maybe that
-step got skipped)
-go into PyCharm…settings, then “Project interpreter” on the right side,
-click the easy-to-miss gear icon and “Add”</p>
+<p>Если это не работает, (порой PyCharm это игнорирует, либо этот шаг пропускается) зайдите в PyCharm…настройки, затем в “интерпретатор проекта” справа, нажмите по мало заметному значку шестерёнки и нажмите "добавить"</p>
 <img alt="_images/mac6.png" src="_images/mac6.png" />
-<p>…Then set it like so:</p>
+<p>…Затем разместите всё вот так:</p>
 <img alt="_images/mac3.png" src="_images/mac3.png" />
-<p>You should get a warning at the top of the screen that ‘arcade’ is not installed.
-Go ahead and install it. Then try running the starting template.</p>
+<p>Сверху экрана должно вылезти сообщение, что ‘Arcade’ не установлен. Не стесняйтесь: установите его Затем попробуйте установить стартовый шаблон.</p>
 </div>
 <span id="document-installation_linux"></span><div class="section" id="installation-on-linux">
-<h4>Installation on Linux<a class="headerlink" href="#installation-on-linux" title="Постоянная ссылка на этот заголовок">¶</a></h4>
+<h4>Установка на Linux<a class="headerlink" href="#installation-on-linux" title="Постоянная ссылка на этот заголовок">¶</a></h4>
 <div class="section" id="ubuntu-instructions">
-<h5>Ubuntu Instructions<a class="headerlink" href="#ubuntu-instructions" title="Постоянная ссылка на этот заголовок">¶</a></h5>
-<p>The Arcade library is Python 3.6+ only. Most versions of Linux come with
-Python 2.x. You’ll need to install Python 3 and use it instead of the
-built-in Python 2.x. (Usually on Linux and Mac, you can type <code class="docutils literal notranslate"><span class="pre">python3</span></code>
-instead of <code class="docutils literal notranslate"><span class="pre">python</span></code> once installed. Same with <code class="docutils literal notranslate"><span class="pre">pip3</span></code> instead of
-<code class="docutils literal notranslate"><span class="pre">pip</span></code> to install packages to Python 3.x)</p>
-<p>Install Python 3 and some image dependencies:</p>
+<h5>Инструкции к Ubuntu<a class="headerlink" href="#ubuntu-instructions" title="Постоянная ссылка на этот заголовок">¶</a></h5>
+<p>Библиотека Arcade доступна только для Python 3.6 и новее. Многие версии для Linux имеют лишь Python 2.x. Вам нужно загрузить Python 3 и использовать его взаместо встроенного Python 2.x. (Обычно после установки Python3 на Linux или Mac вы можете вбивать <code class="docutils literal notranslate"><span class="pre">python3</span></code> вместо <code class="docutils literal notranslate"><span class="pre">python</span></code>. Также с <code class="docutils literal notranslate"><span class="pre">pip3</span></code> вместо <code class="docutils literal notranslate"><span class="pre">pip</span></code> для установки пакетов к Python 3.x)</p>
+<p>Установите Python 3 и несколько графических зависимостей:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>apt update <span class="o">&amp;&amp;</span> sudo apt install -y python3-dev python3-pip libjpeg-dev zlib1g-dev
 </pre></div>
 </div>
-<p>Check that you have at least Python 3.6 with:</p>
+<p>Убедитесь, что у вас есть хотя бы Python 3.6, включающая:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python3 -V
 </pre></div>
 </div>
-<p>You need at least version 3.6. If you have that,
-you should be ready to install Arcade:</p>
+<p>Вам нужен хотя бы version 3.6. Если он у вас имеется, то вы готовы к установке Arcade:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo pip3 install arcade
 </pre></div>
 </div>
 </div>
 <div class="section" id="raspberry-pi-instructions">
-<h5>Raspberry Pi Instructions<a class="headerlink" href="#raspberry-pi-instructions" title="Постоянная ссылка на этот заголовок">¶</a></h5>
-<p>Arcade required OpenGL graphics 3.3 or higher. Unfortunately the Raspberry Pi
-does not support this, Arcade can not run on the Raspberry Pi.</p>
+<h5>Инструкции к Raspberry Pi<a class="headerlink" href="#raspberry-pi-instructions" title="Постоянная ссылка на этот заголовок">¶</a></h5>
+<p>Arcade требует OpenGL graphics 3.3 или выше. К сожалению, Raspberry Pi такого не поддерживает, а потому Arcade на Raspberry Pi, увы, не запустится.</p>
 </div>
 </div>
 <span id="document-installation_from_source"></span><div class="section" id="installation-from-source">
-<h4>Installation From Source<a class="headerlink" href="#installation-from-source" title="Постоянная ссылка на этот заголовок">¶</a></h4>
-<p>First step is to clone the repository:</p>
+<h4>Загрузка из источника<a class="headerlink" href="#installation-from-source" title="Постоянная ссылка на этот заголовок">¶</a></h4>
+<p>Сперва склонируйте репозиторий:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/pvcraven/arcade.git
 </pre></div>
 </div>
-<p>Or download from:</p>
+<p>Или скачайте из:</p>
 <blockquote>
 <div><p><a class="reference external" href="https://github.com/pvcraven/arcade/archive/master.zip">https://github.com/pvcraven/arcade/archive/master.zip</a></p>
 </div></blockquote>
-<p>Next, we’ll create a linked install. This will allow you to change files in the
-arcade directory, and is great
-if you want to modify the Arcade library code. From the root directory of
-arcade type:</p>
+<p>Затем создайте связанную установку. Это позволит вам изменять файлы в аркадном каталоге, что замечательно для тех, кто хочет изменить код библиотек Arcade. Из коренного каталога типа arcade:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install -e .
 </pre></div>
 </div>
-<p>To install additional documentation and development requirements:</p>
+<p>Для загрузки дополнительной документации и требований разработчика:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install -e .<span class="o">[</span>dev,docs<span class="o">]</span>
 <span class="c1"># .. or separately</span>
 pip install -e .<span class="o">[</span>dev<span class="o">]</span>
@@ -733,7 +693,7 @@ pip install -e .<span class="o">[</span>docs<span class="o">]</span>
 </div>
 </div>
 <span id="document-pygame_comparison"></span><div class="section" id="pygame-comparison">
-<span id="id1"></span><h3>Pygame Comparison<a class="headerlink" href="#pygame-comparison" title="Постоянная ссылка на этот заголовок">¶</a></h3>
+<span id="id1"></span><h3>Сравнение с Pygame<a class="headerlink" href="#pygame-comparison" title="Постоянная ссылка на этот заголовок">¶</a></h3>
 <p>The Python Arcade Library has the same target audience as the well-known
 Pygame library. So how do they differ?</p>
 <p>Features that the Arcade Library has:</p>
@@ -4808,7 +4768,7 @@ If you do, see <a class="reference internal" href="index.html#install-pycharm"><
 below working. (It is also in the zip file as
 <code class="docutils literal notranslate"><span class="pre">01_open_window.py</span></code>.)</p>
 <div class="admonition note">
-<p class="admonition-title">Note</p>
+<p class="admonition-title">Примечание</p>
 <p>This is a fixed-size window. It is possible to have  a
 <a class="reference internal" href="index.html#resizable-window"><span class="std std-ref">Resizable Window</span></a> or a <a class="reference internal" href="index.html#full-screen-example"><span class="std std-ref">Full Screen Example</span></a>, but there are more
 interesting things we can do first. Therefore we’ll stick with a fixed-size
@@ -5063,7 +5023,7 @@ which holds only the player.</p>
 </div>
 </div>
 <div class="admonition note">
-<p class="admonition-title">Note</p>
+<p class="admonition-title">Примечание</p>
 <p>Once the code example is up and working:</p>
 <ul class="simple">
 <li><p>Adjust the code and try putting sprites in new positions.</p></li>
@@ -5092,7 +5052,7 @@ sprite, and a list of sprites the moving sprite can’t move through.</p>
 <p>For more information about the physics engine we are using here, see
 <a class="reference external" href="../../arcade.html#arcade.PhysicsEngineSimple">PhysicsEngineSimple class</a></p>
 <div class="admonition note">
-<p class="admonition-title">Note</p>
+<p class="admonition-title">Примечание</p>
 <p>It is possible to have multiple physics engines, one per moving sprite. These
 are very simple, but easy physics engines. See
 <a class="reference internal" href="index.html#pymunk-platformer-tutorial"><span class="std std-ref">Pymunk Platformer</span></a> for a more advanced physics engine.</p>
@@ -5148,7 +5108,7 @@ The physics engine will look at that, and move the player unless she’ll hit a 
 </div>
 </div>
 <div class="admonition note">
-<p class="admonition-title">Note</p>
+<p class="admonition-title">Примечание</p>
 <p>This method of tracking the speed to the key the player presses is simple, but
 isn’t perfect. If the player hits both left and right keys at the same time,
 then lets off the left one, we expect the player to move right. This method won’t
@@ -5221,7 +5181,7 @@ statements we had before, and make ‘UP’ jump when pressed.</p>
 </div>
 </div>
 <div class="admonition note">
-<p class="admonition-title">Note</p>
+<p class="admonition-title">Примечание</p>
 <p>You can change how the user jumps by changing the gravity and jump constants.
 Lower values for both will make for a more “floaty” character. Higher values make
 for a faster-paced game.</p>
@@ -5431,7 +5391,7 @@ before the camera starts scrolling.</p>
 </div>
 </div>
 <div class="admonition note">
-<p class="admonition-title">Note</p>
+<p class="admonition-title">Примечание</p>
 <p>Work at changing the viewport margins to something that you like.</p>
 </div>
 </div>
@@ -5666,7 +5626,7 @@ we’ll show you how to specify the hitbox.</p>
 </div>
 </div>
 <div class="admonition note">
-<p class="admonition-title">Note</p>
+<p class="admonition-title">Примечание</p>
 <p>Spend time placing the coins where you would like them.
 If you have extra time, try adding more than just coins. Also add gems or keys
 from the graphics provided.</p>
@@ -5913,7 +5873,7 @@ screen. To do this, we just add in the <code class="docutils literal notranslate
 </div>
 </div>
 <div class="admonition note">
-<p class="admonition-title">Note</p>
+<p class="admonition-title">Примечание</p>
 <p>You might also want to add:</p>
 <ul class="simple">
 <li><p>A count of how many coins are left to be collected.</p></li>
@@ -5969,7 +5929,7 @@ you might have layers for:</p>
 <li><p>Ladders</p></li>
 </ul>
 <div class="admonition note">
-<p class="admonition-title">Note</p>
+<p class="admonition-title">Примечание</p>
 <p>Once you get multiple layers it is VERY easy to add items to the wrong
 layer.</p>
 </div>
@@ -6232,7 +6192,7 @@ map editor for for “Platforms” and “Coins”.</p>
 </div>
 </div>
 <div class="admonition note">
-<p class="admonition-title">Note</p>
+<p class="admonition-title">Примечание</p>
 <p>You can set the <strong>background color</strong> of the map by selecting “Map…Map Properties”.
 Then click on the three dots to pull up a color picker.</p>
 <p>You can edit the <strong>hitbox</strong> of a tile to make ramps
@@ -6578,7 +6538,7 @@ corner of an item.</p>
 </div>
 </div>
 <div class="admonition note">
-<p class="admonition-title">Note</p>
+<p class="admonition-title">Примечание</p>
 <p>What else might you want to do?</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="index.html#sprite-enemies-in-platformer"><span class="std std-ref">Platformer With Enemies</span></a></p></li>
@@ -7618,7 +7578,7 @@ to work with.</p></li>
 <li><p>Make sprites from the layers in the tiled map.</p></li>
 </ul>
 <div class="admonition note">
-<p class="admonition-title">Note</p>
+<p class="admonition-title">Примечание</p>
 <p>When making sprites from the tiled map layer, the name of the layer you
 load must match <strong>exactly</strong> with the layer created in the tiled map editor.
 It is case-sensitive.</p>
@@ -9720,7 +9680,7 @@ to that pile.</p>
 <h5>Test<a class="headerlink" href="#test" title="Постоянная ссылка на этот заголовок">¶</a></h5>
 <p>Test out your program, and see if the cards are being fanned out properly.</p>
 <div class="admonition note">
-<p class="admonition-title">Note</p>
+<p class="admonition-title">Примечание</p>
 <p>The code isn’t enforcing any game rules. You can stack cards in any
 order. Also, with long stacks of cards, you still have to drop the card
 on the mat. This is counter-intuitive when the stack of cards extends
@@ -10444,7 +10404,7 @@ create our OpenGL shader program. The program will be a collection of two
 shader programs. These will be stored in separate files, saved in the same
 directory.</p>
 <div class="admonition note">
-<p class="admonition-title">Note</p>
+<p class="admonition-title">Примечание</p>
 <p>In addition to loading the program via the <cite>load_program()</cite> method of
 <cite>ArcadeContext</cite> shown, it is also possible to keep the GLSL programs in triple-
 quoted string by using <cite>program()</cite> of <cite>Context</cite>.</p>
@@ -11094,7 +11054,7 @@ based on a gravity constant. (In this case, 1.1.)</p>
 <span id="document-tutorials/bundling_with_pyinstaller/index"></span><div class="section" id="bundling-a-game-with-pyinstaller">
 <span id="bundle-into-redistributable"></span><h3>Bundling a Game with PyInstaller<a class="headerlink" href="#bundling-a-game-with-pyinstaller" title="Постоянная ссылка на этот заголовок">¶</a></h3>
 <div class="admonition note">
-<p class="admonition-title">Note</p>
+<p class="admonition-title">Примечание</p>
 <p>You must have Arcade version 2.4.3 or greater and Pymunk 5.7.0 or greater
 for the instructions below to work.</p>
 </div>
